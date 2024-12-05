@@ -342,7 +342,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 	def ips(command):
 		print("")
 		var.ip = tools.arg("Targets (Seperated by ', '): ", "ips ", command).split(", ")
-		for ip in var.target:
+		for ip in var.ip:
 			if "." not in ip:
 				print("This IP does not exist.")
 		print("")
